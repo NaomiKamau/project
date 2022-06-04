@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a job</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
+            <div class="relative mx-auto sm:w-96 text-center">
+             <span class="text-2xl font-bold text-green-900">Add a job</span>
+             <div class="mt-4 rounded-lg bg-slate-300 shadow-md text-left">
+                <div class="h-2 rounded-t-md bg-green-700"></div>
+            <div class="px-8 py-6 text-black">
+              <label class="block font-semibold">Job Title</label>
+              <input type="text" placeholder="Enter job title" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400" />
+              <label class="mt-3 block font-semibold">Company</label>
+              <input type="text" placeholder="Enter company" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400" />
+              <label class="block font-semibold">Workplace Type</label>
+              <select name="workplace" id="workplace" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400">
+                <option value="on-site">on-site</option>
+                <option value="hybrid">hybrid</option>
+                <option value="remote">remote</option>
+              </select>
+              <label class="block font-semibold">Job Location</label>
+              <input type="text" placeholder="Enter job location" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400" />
+              <label class="block font-semibold">Employment Type</label>
+              <select name="employment-type" id="employment-type" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400">
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Temporary">Temporary</option>
+                <option value="Volunteer">Volunteer</option>
+                <option value="Internship">Internship</option>
+              </select>
+              <label class="block font-semibold">Job description</label>
+              <textarea name="desrciption" placeholder="Describe the Job" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400"></textarea>
+              <label class="block font-semibold">Add Skills</label>
+              <select name="skills" id="skills" class="mt-2 h-5 w-full rounded-md border bg-slate-200 px-3 py-5 hover:outline-none focus:outline-none focus:ring-1 focus:ring-indigo-400">
+                <option value="computer science">computer science</option>
+                <option value="Web-development">Web-development</option>
+                <option value="Full stack developer">Full stack developer</option>
+                <option value="Backend developer">Backend developer</option>
+                <option value="Graphics design">Graphics design</option>
+              </select>
+              <button type="submit" class="mt-4 bg-green-800 py-2 px-6 rounded-md hover:bg-green-700"><a href="viewjob.html">Add Job</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

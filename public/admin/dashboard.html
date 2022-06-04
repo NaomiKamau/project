@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Dashboard</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="text-gray-600 body-font bg-slate-200">
+            <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+                    <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                    <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+                  </svg>
+                <span class="ml-3 text-xl">Admin Dashboard</span>
+              </a>
+            </div>
+          </header>
+          <div class="flex  overflow-hidden bg-slate-200 rounded-lg h-screen">
+            <div class="hidden md:flex md:flex-shrink-0">
+                <div class="flex flex-col w-64">
+                    <div class="flex flex-col flex-grow pt-5 overflow-y-auto border-r bg-slate-200">
+                        <div class="flex flex-col flex-grow px-4 mt-5">
+                            <nav class="flex-1 space-y-1 bg-slate-200">
+                                <ul>
+                                    <li class="mt-4">
+                                        <a class="inline-flex items-center w-full px-4 py-2 mt-1 text-base font-semibold transition duration-500 ease-in-out transform border rounded-lg text-black border-gray-300 hover:border-neutral-800 focus:shadow-outline" white="" 70="" href="dashboard.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                                              </svg>
+                                            <span class="ml-4"> Overview</span>
+                                        </a>
+                                    </li>
+                                    <li class="mt-4">
+                                        <a class="inline-flex items-center w-full px-4 py-2 mt-1 font-semibold text-base transition duration-500 ease-in-out transform border rounded-lg text-black border-gray-300 hover:border-neutral-800 focus:shadow-outline" href="programs.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                              </svg>
+                                            <span class="ml-4">Programs</span>
+                                        </a>
+                                    </li>
+                                    <li class="mt-4">
+                                        <a class="inline-flex items-center w-full font-semibold px-4 py-2 mt-1 text-base transition duration-500 ease-in-out transform border rounded-lg text-black border-gray-300 hover:border-neutral-800 focus:shadow-outline" href="partners.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                                                <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                                              </svg>
+                                            <span class="ml-4">Partners</span>
+                                        </a>
+                                    </li>
+                                    <li class="mt-4">
+                                        <a class="inline-flex items-center w-full font-semibold px-4 py-2 mt-1 text-base transition duration-500 ease-in-out transform border rounded-lg text-black border-gray-300 hover:border-neutral-800 focus:shadow-outline" href="../landingpage.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                              </svg>
+                                            <span class="ml-4">Logout</span></a>
+                                    </li>
+                                </ul>
+                                                   
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 w-0 overflow-hidden">
+                <main class="relative flex-1 overflow-y-auto focus:outline-none">
+                        <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+                            <!-- Put your content here -->
+                            <div class="py-4">
+                                <div class="bg-neutral-100 h-screen">
+                                    <section class="text-gray-600 body-font">
+                                        <div class="container px-5 py-15 mx-auto">
+                                            <h1 class="font-bold p-4 text-3xl">Different Programs</h1>
+                                          <div class="flex flex-wrap -m-4 text-center">
+                                            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                                              <div class="border-2 border-black px-4 py-10 rounded-lg">
+                                                <h2 class="title-font font-bold text-3xl text-gray-900">400</h2>
+                                                <p class="leading-relaxed pt-2 text-xl font-semibold">Entreprenuership</p>
+                                                <a class="text-indigo-500 inline-flex items-center" href="details.html">View Details
+                                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                      <path d="M5 12h14"></path>
+                                                      <path d="M12 5l7 7-7 7"></path>
+                                                    </svg>
+                                                  </a>
+                                              </div>
+                                            </div>
+                                            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                                                <div class="border-2 border-black px-4 py-10 rounded-lg">
+                                                  <h2 class="title-font font-bold text-3xl text-gray-900">480</h2>
+                                                  <p class="leading-relaxed pt-2 text-xl font-semibold">Youth Training</p>
+                                                  <a class="text-indigo-500 inline-flex items-center" href="details.html">View Details
+                                                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="M12 5l7 7-7 7"></path>
+                                                      </svg>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                              <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                                                <div class="border-2 border-black px-4 py-10 rounded-lg">
+                                                  <h2 class="title-font font-bold text-3xl text-gray-900">301</h2>
+                                                  <p class="leading-relaxed pt-2 text-xl font-semibold">Joy Project</p>
+                                                  <a class="text-indigo-500 inline-flex items-center" href="details.html">View Details
+                                                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="M12 5l7 7-7 7"></path>
+                                                      </svg>
+                                                    </a>
+                                                </div>
+                                              </div>
+                                              <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                                                <div class="border-2 border-black px-4 py-10 rounded-lg">
+                                                  <h2 class="title-font font-bold text-3xl text-gray-900">21</h2>
+                                                  <p class="leading-relaxed pt-2 text-xl font-semibold">Incubar project</p>
+                                                  <a class="text-indigo-500 inline-flex items-center" href="details.html">View Details
+                                                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M5 12h14"></path>
+                                                        <path d="M12 5l7 7-7 7"></path>
+                                                      </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </section>
+                                  
+                                
+                            </div>
+                            <!-- Do not cross the closing tag underneath this coment-->
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
